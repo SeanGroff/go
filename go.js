@@ -1,16 +1,18 @@
-const isObject = require('./internal/isObject');
-const forEach = require('./methods/forEach');
-const map = require('./methods/map');
-const filter = require('./methods/filter');
 const concatAll = require('./methods/concatAll');
+const filter = require('./methods/filter');
+const forEach = require('./methods/forEach');
+const isObject = require('./internal/isObject');
+const map = require('./methods/map');
+const reduce = require('./methods/reduce');
 const zipWith = require('./methods/zipWith');
 
 (function go() {
   const Go = {
+    concatAll,
+    filter,
     forEach,
     map,
-    filter,
-    concatAll,
+    reduce,
     zipWith,
   };
 

@@ -33,7 +33,6 @@ describe('filter', () => {
     const predicateFunction = jest.fn(item => item > 3);
 
     const projectedArray = Go.filter(predicateFunction, arrItems);
-    console.log(projectedArray);
 
     expect(projectedArray).toHaveLength(2);
     expect(projectedArray).not.toBe(arrItems);

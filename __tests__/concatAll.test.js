@@ -28,7 +28,6 @@ describe('concatAll', () => {
     const arrayOfArrays = [[1, 2], [3, 4], [5]];
 
     const projectedArray = Go.concatAll(arrayOfArrays);
-    console.log('projected array is: ', projectedArray);
 
     expect(projectedArray).toBeInstanceOf(Array);
     expect(projectedArray).toHaveLength(5);

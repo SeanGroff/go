@@ -49,7 +49,6 @@ describe('zipWith', () => {
     }));
 
     const projectedArray = Go.zipWith(projectionFunction, arrLeft, arrRight);
-    console.log(projectedArray);
 
     expect(projectedArray).toBeInstanceOf(Array);
     expect(projectedArray).toHaveLength(3);
