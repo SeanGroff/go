@@ -1,3 +1,4 @@
+const compose = require('./methods/compose');
 const concatAll = require('./methods/concatAll');
 const filter = require('./methods/filter');
 const forEach = require('./methods/forEach');
@@ -8,6 +9,7 @@ const zipWith = require('./methods/zipWith');
 
 (function go() {
   const Go = {
+    compose,
     concatAll,
     filter,
     forEach,
